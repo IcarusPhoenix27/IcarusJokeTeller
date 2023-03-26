@@ -14,7 +14,7 @@ function toggleButton() {
 
 async function getJokes() {
     let joke = '';
-    const apiUrl = 'https://v2.jokeapi.dev/joke/Any?blacklistFlags=racist';
+    const apiUrl = 'https://v2.jokeapi.dev/joke/Any?blacklistFlags=nsfw,religious,political,racist,sexist,explicit';
 try{
     const response = await fetch(apiUrl);
     const data = await response.json();
